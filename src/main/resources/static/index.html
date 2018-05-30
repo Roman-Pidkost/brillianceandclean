@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CarWash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<link rel="stylesheet" href="css/slick-dist.css">
+<link rel="stylesheet" href="css/slick-theme-dist.css">
+<link rel="stylesheet" href="css/main.min-dist.css">
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900i&amp;subset=cyrillic" rel="stylesheet">
+
+<body>
+
+    <header>
+        <div id="main" class="container header">
+            <div class="videoBlock">
+                <video class="header_video" muted loop autoplay>
+                    <source src="video/main_video.mp4" type="video/mp4">
+                    <img src="video/1.jpg">
+                </video>
+            </div>
+            <div class="header_top">
+                <div class="header_logo"></div>
+                <div class="header_navbar">
+                    <div class="burger"></div>
+                    <ul class="navbarHeaderMobile">
+                        <li><a href="#main" class="linkMobile">Головна</a></li>
+                        <li><a href="#locations" class="linkMobile">Автомийки</a></li>
+                        <li><a href="#advantages" class="linkMobile">Переваги</a></li>
+                        <li><a href="#services" class="linkMobile">Послуги</a></li>
+                        <li><a href="#aboutUs" class="linkMobile">Про нас</a></li>
+                    </ul>
+                    <ul id="navbarHeader" class="navbarHeader">
+                        <li><a href="#main">Головна</a></li>
+                        <li><a href="#locations">Автомийки</a></li>
+                        <li><a href="#advantages">Переваги</a></li>
+                        <li><a href="#services">Послуги</a></li>
+                        <li><a href="#aboutUs">Про нас</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_text">
+                <h2>Чекаємо вас !</h2>
+                <h3>Автомийки та </h3>
+                <h3>детейлінг центри</h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="locations" class="container location_container">
+                <div class="locations"></div>
+                <div class="locations_main">
+                    <div class="loc_top">
+                        <div class="locLeft loc_top_left">
+                            <h3>Послуги:</h3>
+                        </div>
+                        <div class="locRight loc_top_right"></div>
+                    </div>
+                    <div class="loc_middle">
+                        <div class="locLeft loc_middle_left">
+                            <h3>Додаткові послуги:</h3>
+                        </div>
+                        <div class="locRight loc_middle_right"></div>
+                    </div>
+                    <div class="loc_bottom">
+                        <div class="locLeft loc_bottom_left">
+                            <h3>Контакти:</h3>
+                        </div>
+                        <div class="locRight loc_bottom_right"></div>
+                    </div>
+                    <h6>*попередній запис обов'язковий</h6>
+                </div>
+            </div>
+            <!--<div class="container slider">-->
+                <!--<div class="photos"></div>-->
+            <!--</div>-->
+            <div id="advantages" class="container adv1">
+                <div class="leftCorner"></div>
+                <div class="rightCorner"></div>
+                <h2 class="advantagesHeader">Наші переваги</h2>
+                <div class="adv_section">
+                    <div class="adv_block">
+                        <div class="adv_pict_small restAdv"></div>
+                        <p>Ресторан</p>
+                    </div>
+                    <div class="adv_block">
+                        <div class="adv_pict_small locAdv"></div>
+                        <p>Зручне розташування</p>
+                    </div>
+                    <div class="adv_block">
+                        <div class="adv_pict_small timeAdv"></div>
+                        <p>Працюємо до 2:00</p>
+                    </div>
+                    <div class="adv_block">
+                        <div class="adv_pict_small wifiAdv"></div>
+                        <p>Free Wi-Fi</p>
+                    </div>
+                    <div class="adv_block">
+                        <div class="adv_pict_small cardAdv"></div>
+                        <p>Розрахунок платіжними картами</p>
+                    </div>
+                    <div class="adv_block">
+                        <div class="adv_pict_small giftAdv"></div>
+                        <p>Подарункові сертифікати</p>
+                    </div>
+                </div>
+            </div>
+            <div id="services" class="container services_container">
+                <h2>Комплексні послуги</h2>
+                <div class="services_nav"></div>
+                <div class="services_background clickable"></div>
+                <div class="services_description">
+                    <div class="serv_top">
+                        <div id="backServices" class="clickable"></div>
+                        <h3 class="service_header">включає в себе:</h3>
+                        <ul id="serviceInclude"></ul>
+                        <h6 class="preSign">*попередній запис обов'язковий</h6>
+                    </div>
+                    <div class="serv_left">
+                        <h3 class="serv_left_title"></h3>
+                        <p class="serv_left_text"></p>
+                    </div>
+                    <div class="serv_right">
+                        <h3 class="serv_right_title"></h3>
+                        <p class="serv_right_text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container giftcard">
+                <div class="leftCorner"></div>
+                <div class="rightCorner"></div>
+                <div class="gift_part gift_pict">
+                    <div class="gift_picture"></div>
+                </div>
+                <div class="gift_part gift_text">
+                    <h2>Подарунковий сертифікат</h2>
+                    <p>В наших автомийках та детейлінг центрах ви можете придбати подарункові сертифікати на різні послуги нашої компанії . Цей сертифікат ви можете передати вашим близьким та друзям і вони зможуть розрахуватись за наші послуги ним. <br><br><br><br><br><br></p>
+                </div>
+            </div>
+            <div class="container comments_section">
+                <h2>Відгуки клієнтів</h2>
+                <div id="commentsSlider" class="comments"></div>
+                <div class="confirmbackGr">
+                    <div class="commentConfirmation">
+                        <h3 class="nameComment"></h3>
+                        <h3>Невдовзі він буде опублікований</h3>
+                        <button onclick="closeModal()">ok</button>
+                    </div>
+                </div>
+                <div id="form" class="form">
+
+                    <h3>залиште свій коментар</h3>
+                    <div class="reviewPart">
+                        <form  class="reviewPart" id="formRev" action="">
+                        <span>Ім'я</span>
+                        <input id="comentName" type="text" placeholder="Ім'я">
+                        <!--<span>Прізвище</span>-->
+                        <!--<input id="comentSName" type="text" placeholder="Прізвище">-->
+                        <span>Контактний телефон</span>
+                        <input id="comentPhone" type="number" placeholder="099 123 45 67" required>
+                        <span>виберіть адресу комплексу </span>
+                        <select name="" id="selectCW">
+                            <option value="1" selected disabled>виберіть адресу</option>
+                       </select>
+                        <span>Ваш Відгук<span class="textCount"></span></span><textarea id="commentText" maxlength="160" minlength="10" placeholder="Ваш відгук (максимум 150 символів)"></textarea>
+                            <span id="photoText">Виберіть фото</span>
+                        <!--input#photo(type='file')-->
+                        <div class="file_upload">
+                            <button type="button">Вибрати</button>
+                            <div></div>
+                            <input type="file" id='commentPhoto' onchange="encodeImageFileAsURL(this)"></div>
+                        </form>
+                    </div>
+                    <div class="starsPart">
+                        <div class="category"><span id="komfortT">Комфорт</span>
+                            <div id="komfort" class="starsReview">
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                            </div>
+                        </div>
+                        <div class="category"><span id="locationRevT">Розташування</span>
+                            <div id="locationRev" class="starsReview">
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                            </div>
+                        </div>
+                        <div class="category"><span id="serviceRevT">Сервіс</span>
+                            <div id="serviceRev" class="starsReview">
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                            </div>
+                        </div>
+                        <div class="category"><span id="quallityT">Якість</span>
+                            <div id="quallity" class="starsReview">
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                            </div>
+                        </div>
+                        <div class="category"><span id="totalT">Загальне враження</span>
+                            <div id="total" class="starsReview">
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                                <div class="stRew clickable"></div>
+                            </div>
+                        </div>
+                        <button class="backButton clickable">X</button>
+                        <button class="comment_leave_button clickable">Опублікувати відгук</button>
+                    </div>
+                </div>
+                <button class="comments_button clickable"><a href="#form">залишити відгук</a><!--div.comment| //    div.coment_photo
+| //    h3 Lorem psum
+| //    p.coment_text Lorem ipsum dolor sit ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+| //    div.stars
+| //
+| //--></button>
+            </div>
+            <div id="aboutUs" class="container advantages">
+                <div class="leftCorner"></div>
+                <div class="rightCorner"></div>
+                <h2>чому обрати нас</h2>
+                <div class="adv advL">
+                    <div class="adv_text left">
+                        <h3>Комфорт</h3>
+                        <p>
+                            Затишне кафе з м'якими диванами, хорошою кавою і приголомшливими тістечками. У кафе є Wi-Fi і телевізор.
+                        </p>
+                    </div>
+                    <div class="adv_pict pict1"></div>
+                </div>
+                <div class="adv advR">
+                    <div class="adv_text right">
+                        <h3>Якість</h3>
+                        <p>
+                            У нас діють єдині стандарти якості. Кожен автомобіль, перед тим як його здати власнику, проходить ретельний огляд.
+                        </p>
+                    </div>
+                    <div class="adv_pict pict2"></div>
+                </div>
+                <div class="adv advL">
+                    <div class="adv_text left">
+                        <h3>Швидкість</h3>
+                        <p>
+                            Працюємо якісно і швидко! Ми бережемо ваш час! Автомийки працюють до 02.00!
+                        </p>
+                    </div>
+                    <div class="adv_pict pict3"></div>
+                </div>
+                <div class="adv advR">
+                    <div class="adv_text right">
+                        <h3>Працівники</h3>
+                        <p>
+                            У нас працюють лише кваліфіковані працівники, які знають як виконувати свою роботу!
+                        </p>
+                    </div>
+                    <div class="adv_pict pict4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+            <div id="footerLogo" class="footerLogo"></div>
+            <div class="footerNav">
+                <ul class="navbar">
+                    <li><a href="#main" class="footer_nav_link">Головна</a></li>
+                    <li><a href="#locations" class="footer_nav_link">Автомийки</a></li>
+                    <li><a href="#advantages" class="footer_nav_link">Переваги</a></li>
+                    <li><a href="#services" class="footer_nav_link">Послуги</a></li>
+                    <li><a href="#aboutUs" class="footer_nav_link">Про нас</a></li>
+                </ul>
+            </div>
+            <div class="footerAbout">
+                <p></p>
+            </div>
+            <div class="footerLocations"></div>
+            <!--    //div.footer_loc-->
+            <!--    //    h2 автомийка-->
+            <!--    //    h3 м.Львів-->
+            <!--    //    div.footer_adress-->
+            <!--    //        h3 вул.Стрийстка 100-->
+            <!--    //    div.footer_phone-->
+            <!--    //        p +38099 123 45 67-->
+            <!--    //        p +38099 123 45 67-->
+            <div class="footer_bottom">
+                <p>© copyright 2017 all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/rev.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
