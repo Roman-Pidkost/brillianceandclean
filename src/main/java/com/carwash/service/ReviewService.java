@@ -17,8 +17,7 @@ import java.util.UUID;
 @Service
 public class ReviewService {
 
-    public static final String PATH_TO_IMG_DIRECTORY = "/desktop/resource/";
-//    public static final String PATH_TO_IMG_DIRECTORY = "\\backend\\img\\";
+    public static final String PATH_TO_IMG_DIRECTORY = "/home/backend/resources";
 
     @Autowired
     private ReviewRepository reviewRepository;
@@ -61,7 +60,7 @@ public class ReviewService {
         byte[] imageBytes = Base64.decodeBase64(photo.split(",")[1]);
         ByteArrayInputStream bis = new ByteArrayInputStream(imageBytes);
         try {
-            File pathToFolder = new File(System.getProperty("user.home") + PATH_TO_IMG_DIRECTORY);
+            File pathToFolder = new File(PATH_TO_IMG_DIRECTORY);
             createFolder(pathToFolder);
 
             BufferedImage image = ImageIO.read(bis);
