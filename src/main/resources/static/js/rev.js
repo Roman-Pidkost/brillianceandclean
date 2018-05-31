@@ -23,7 +23,7 @@ $('.comment_leave_button').click(function () {
 
         $.ajax({
             type: "POST",
-            url: + host + "reviews",
+            url: host + "reviews",
             data: JSON.stringify(newReview),
             contentType: 'application/json',
             success: function () {
@@ -67,7 +67,7 @@ $('.comment_leave_button').click(function () {
 function getReviewFromDb() {
 
     $.ajax({
-        url: + host + "reviews/showed",
+        url: host + "reviews/showed",
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',

@@ -44,7 +44,7 @@ var L = rev.length
         $(".notpublish").click(function(){
             var id = this.alt;
             $.ajax({
-                url: + host + 'reviews/notshow/'+id,
+                url: host + 'reviews/notshow/'+id,
                 // headers: {
                 //     'X-Auth-Token': localStorage.getItem("token")
                 // },
@@ -60,7 +60,7 @@ var L = rev.length
         $(".publish").click(function(){
             var id = this.alt;
             $.ajax({
-                url: + host + 'reviews/show/'+id,
+                url: host + 'reviews/show/'+id,
                 // headers: {
                 //     'X-Auth-Token': localStorage.getItem("token")
                 // },
@@ -76,7 +76,7 @@ var L = rev.length
         $(".delete").click(function(){
             var id = this.alt;
             $.ajax({
-                url: + host + 'reviews/'+id,
+                url: host + 'reviews/'+id,
                 // headers: {
                 //     'X-Auth-Token': localStorage.getItem("token")
                 // },
@@ -96,7 +96,7 @@ $("#cancelButton").click(function () {
 
 function loadDataFromServer(){
     $.ajax({
-            url: + host + 'reviews',
+            url: host + 'reviews',
             // headers: {
             //     'X-Auth-Token': localStorage.getItem("token")
             // },
@@ -127,7 +127,7 @@ $("#okButton").click(function () {
     adm.pass = $('#password').val()
     $("#login, #password").val('')
     $.ajax({
-        url: + host + "login",
+        url: host + "login",
         type: 'POST',
         data: JSON.stringify(adm),
         dataType: 'json',
