@@ -1,6 +1,7 @@
 /**
  * Created by Volchak on 17.10.2017.
  */
+var host = 'http://95.46.44.169:8080/';
 
 var rate = []
 var id, N, rateStars = 0;
@@ -22,7 +23,7 @@ $('.comment_leave_button').click(function () {
 
         $.ajax({
             type: "POST",
-            url: "http://localhost:8088/reviews",
+            url: + host + "reviews",
             data: JSON.stringify(newReview),
             contentType: 'application/json',
             success: function () {
@@ -66,7 +67,7 @@ $('.comment_leave_button').click(function () {
 function getReviewFromDb() {
 
     $.ajax({
-        url: "http://localhost:8088/reviews/showed",
+        url: + host + "reviews/showed",
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',
