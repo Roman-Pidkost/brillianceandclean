@@ -95,7 +95,10 @@ var carWash = [
         phoneMain: '+38098 05 00 128',
         phoneAdd: '+38067 71 39 211',
         phoneMainDesc: '- запис на мийку',
-        phoneAddDesc: '- (поліровка, покриття, хімія',
+        phoneAddDesc: '- (поліровка, покриття, хімія)',
+        servicesList: [
+            '<b>Детейлінг</b><br>(поліровка кузова, хімчистка салона, нанесення захисного покриття)'
+        ],
         services: [
             {
                 name: 'someName',
@@ -192,7 +195,7 @@ var carWash = [
     {
         name: '\"Шипшина\"',
         addressCity: "м.Львів",
-        addressStr: "вул. Стрийська 202",
+        addressStr: "вул. Луганська 10А",
         phoneMain: '+38098 29 88 635',
         phoneMainDesc: '- запис на мийку',
         services: [
@@ -502,10 +505,137 @@ var additionalServices = [
     'Відмивання дисків',
     'Твердий віск',
     'Полімер-віск',
-    'Натирання ущільнювачів силіконом, заприскування замків розморожувачем',
-    '',
+    'Натирання ущільнювачів силіконом, заприскування замків розморожувачем'
 ];
 
+var allServices = [
+    {
+        name: 'Поліровка кузова',
+        description1: {
+            name: 'CW1/s1',
+            text: '!!!!!!!!! !!!!!!!!!!!!!!!lorem ipsum sit ame!!!!!!!!!! !!!!!!!!lorem ipsum sit ame!!!! !!!!!!!! !!!!!!lorem ipsum sit ame!!!!!! !!!!!!!!!!!!lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: '!!!!!!!!!!!!!lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['1some servisesome servise1', 'some servisesome servise2', 'some servise3ome servise3', 'some servise4some servise4', 'some servise5some servise5', 'some servise6some servise6', 'some servise7some servise7', 'some servise8some servise8', 'some servise9some servise9', 'some servise10some servise10']
+    },
+    {
+        name: 'Хімчистка салонів(парова хімчиста)',
+        description1: {
+            name: 'cw1s2',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['2some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Педрепродажна підготовка',
+        description1: {
+            name: 'CW1s3',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['3some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Твердий віск',
+        description1: {
+            name: 'CW1S4',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['4some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Видалення бітумних плям',
+        description1: {
+            name: 'CW1S5',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['5some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Полірування фар',
+        description1: {
+            name: 'CW1S6',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['6some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Обклейка фарм захисною плівкою(фірми LLumar)',
+        description1: {
+            name: 'CW1S6',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['6some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Продаж пплівки',
+        description1: {
+            name: 'CW1S6',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['6some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    },
+    {
+        name: 'Продаж ароматизаторів салону',
+        description1: {
+            name: 'CW1S6',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        description2: {
+            name: 'права частинка',
+            text: 'lorem ipsum sit ametsjdf hsald hsa d ksd kjs gkjshjs sdsk s'
+
+        },
+        Include: ['6some servise1', 'some servise2', 'some servise3', 'some servise4', 'some servise5', 'some servise6', 'some servise7', 'some servise8', 'some servise9', 'some servise10']
+    }
+];
 
 
 var CarWashServices = carWash[0].services;
@@ -588,7 +718,8 @@ function chooseCarWash(n) {
     $('buttons').removeClass('.locationChosen');
     $('.service_but').remove()
     $('.serviceIncluded ').remove()
-    CarWashServices = carWash[n].services;
+    // CarWashServices = carWash[n].services;
+    CarWashServices = allServices;
     ServiceChosen = CarWashServices[0]
 
     buildServicesList()
@@ -602,6 +733,12 @@ function defineServices(s) {
     var l = servicesList.length;
     $('.locRight').fadeOut(1);
     $('.loc_top_right').empty();
+
+    if (carWash[s].servicesList) {
+        for (var i = 0; i < carWash[s].servicesList.length; i++) {
+            $('.loc_top_right').append('<span> &#8226;' + carWash[s].servicesList[i] + '</span>').fadeIn(1000)
+        }
+    }
     for (var i = 0; i < l; i++) {
         $('.loc_top_right').append('<span> &#8226;' + servicesList[i] + '</span>').fadeIn(1000)
     }
