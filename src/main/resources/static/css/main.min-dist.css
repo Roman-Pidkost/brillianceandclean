@@ -5,7 +5,7 @@ html {
     min-width: 320px;
 }
 
-.adv, .comments, .file_upload, .form, .gift_part p {
+.proposal, .comments, .file_upload, .form, .gift_part p {
     overflow: hidden
 }
 
@@ -1204,6 +1204,12 @@ button {
     letter-spacing: 1.4px
 }
 
+@media screen and (max-width: 380px) {
+    .gift_part p {
+        width: 85%;
+    }
+}
+
 .gift_pict {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1756,7 +1762,7 @@ button {
     color: #455a64
 }
 
-.adv_pict, .adv_pict_small {
+.proposal_pict, .proposal_pict_small {
     background-position: center
 }
 
@@ -1859,7 +1865,7 @@ input[type='number'] {
     position: relative
 }
 
-.adv, .adv_text {
+.proposal, .proposal_text {
     display: -webkit-box;
     display: -ms-flexbox
 }
@@ -1901,11 +1907,11 @@ input[type='number'] {
     }
 }
 
-.advR, .arrL {
+.proposalR, .arrL {
     -webkit-box-orient: horizontal
 }
 
-.adv {
+.proposal {
     width: 40%;
     height: 120px;
     display: -webkit-box;
@@ -1915,17 +1921,17 @@ input[type='number'] {
 }
 
 @media (max-width: 719px) {
-    .adv {
+    .proposal {
         width: 100%;
         height: 86px
     }
 
-    .adv_text {
+    .proposal_text {
         min-width: 150px
     }
 }
 
-.advR {
+.proposalR {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     -webkit-flex-direction: row-reverse;
@@ -1933,7 +1939,7 @@ input[type='number'] {
     margin-left: 2%
 }
 
-.adv1, .adv_text, .arrL {
+.proposal1, .proposal_text, .arrL {
     -webkit-box-direction: normal
 }
 
@@ -1945,11 +1951,11 @@ input[type='number'] {
     flex-direction: row
 }
 
-.adv1, .adv_block, .adv_text {
+.proposal1, .proposal_block, .proposal_text {
     -webkit-box-orient: vertical
 }
 
-.adv_text {
+.proposal_text {
     height: 110px;
     width: 80%;
     display: -webkit-box;
@@ -1963,19 +1969,19 @@ input[type='number'] {
     flex-direction: column
 }
 
-.adv1, .adv_section {
+.proposal1, .proposal_section {
     display: -webkit-box;
     display: -ms-flexbox
 }
 
-.adv_text h3 {
+.proposal_text h3 {
     font-weight: 700;
     width: 100%;
     margin: 0;
     padding: 0
 }
 
-.adv_text p {
+.proposal_text p {
     margin: 0;
     width: 70%;
     padding: 0
@@ -2003,7 +2009,7 @@ input[type='number'] {
     text-align: start
 }
 
-.adv_pict {
+.proposal_pict {
     width: 80px;
     height: 80px;
     margin: 0 20px;
@@ -2025,20 +2031,20 @@ input[type='number'] {
     /*top: 50%;*/
     /*transform: translateY(-50%);*/
     /*}*/
-    .adv_text h3 {
+    .proposal_text h3 {
         font-size: 15px;
         font-weight: 500;
         line-height: 17.93px
     }
 
-    .adv_text p {
+    .proposal_text p {
         font-size: 12px;
         font-weight: 300;
         line-height: 14.93px;
         width: 100%;
     }
 
-    .adv_pict {
+    .proposal_pict {
         width: 55px !important;
         max-height: 55px
     }
@@ -2106,7 +2112,7 @@ input[type='number'] {
     background-image: url(../img/prop4.png)
 }
 
-.adv1 {
+.proposal1 {
     width: 100%;
     height: 300px;
     position: relative;
@@ -2129,7 +2135,7 @@ input[type='number'] {
 }
 
 @media (max-width: 719px) {
-    .adv1 {
+    .proposal1 {
         height: 350px;
         margin-bottom: 10px
     }
@@ -2142,7 +2148,7 @@ input[type='number'] {
     }
 }
 
-.adv_section {
+.proposal_section {
     width: 80%;
     height: 150px;
     display: -webkit-box;
@@ -2156,14 +2162,14 @@ input[type='number'] {
     margin-bottom: 10px
 }
 
-.adv_block, .footer {
+.proposal_block, .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-direction: normal
 }
 
 @media (max-width: 719px) {
-    .adv_section {
+    .proposal_section {
         -ms-flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2175,7 +2181,7 @@ input[type='number'] {
     }
 }
 
-.adv_block {
+.proposal_block {
     height: 100px;
     width: 150px;
     display: -webkit-box;
@@ -2198,31 +2204,31 @@ input[type='number'] {
 }
 
 @media (min-width: 720px) and (max-width: 999px) {
-    .adv_block {
+    .proposal_block {
         font-size: 10px;
         width: 160px
     }
 }
 
-.adv_block p {
+.proposal_block p {
     width: 80%;
     height: 40px;
     text-align: center
 }
 
 @media (max-width: 719px) {
-    .adv_block p {
+    .proposal_block p {
         font-size: 12px;
         font-weight: 400;
         line-height: 13.43px
     }
 
-    .adv_block {
+    .proposal_block {
         width: 34%
     }
 }
 
-.adv_pict_small {
+.proposal_pict_small {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -2230,27 +2236,27 @@ input[type='number'] {
     background-repeat: no-repeat
 }
 
-.restAdv {
+.restProposal {
     background-image: url(../img/rest.png)
 }
 
-.locAdv {
+.locProposal {
     background-image: url(../img/location.png)
 }
 
-.timeAdv {
+.timeProposal {
     background-image: url(../img/time.png)
 }
 
-.wifiAdv {
+.wifiProposal {
     background-image: url(../img/wifi.png)
 }
 
-.cardAdv {
+.cardProposal {
     background-image: url(../img/payCard.png)
 }
 
-.giftAdv {
+.giftProposal {
     background-image: url(../img/discount.png)
 }
 
