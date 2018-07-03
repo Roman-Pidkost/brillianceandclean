@@ -47,6 +47,15 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500)
     })
+
+    var videoBlock = document.getElementsByClassName('header_video')[0];
+
+    var interval = setInterval(function () {
+        if (videoBlock.readyState === 4) {
+            videoBlock.play();
+            clearInterval(interval);
+        }
+    }, 300);
 });
 
 $(function (f) {
@@ -82,7 +91,7 @@ $(function (f) {
         // element['fade'+ (f(this).scrollTop() > 50 ? 'In': 'Out')](500);
     });
 
-    document.getElementsByClassName('header_video')[0].play();
+
 });
 $('.form').css({
     left: '-100%'
