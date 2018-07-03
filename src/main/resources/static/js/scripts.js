@@ -48,6 +48,10 @@ $(document).ready(function () {
         }, 500)
     })
 
+    setTimeout(playVideo, 1500);
+});
+
+function playVideo() {
     var videoBlock = document.getElementsByClassName('header_video')[0];
 
     var interval = setInterval(function () {
@@ -56,7 +60,7 @@ $(document).ready(function () {
             clearInterval(interval);
         }
     }, 300);
-});
+}
 
 $(function (f) {
     var element = f('.burger');
