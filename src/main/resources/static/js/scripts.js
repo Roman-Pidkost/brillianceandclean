@@ -81,6 +81,8 @@ $(function (f) {
 
         // element['fade'+ (f(this).scrollTop() > 50 ? 'In': 'Out')](500);
     });
+
+    document.getElementsByClassName('header_video')[0].play();
 });
 $('.form').css({
     left: '-100%'
