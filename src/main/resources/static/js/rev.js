@@ -1,7 +1,7 @@
 /**
  * Created by Volchak on 17.10.2017.
  */
-var host = 'http://95.46.44.169:8080/';
+var host = 'http://localhost:8080/';
 
 var rate = []
 var id, N, rateStars = 0;

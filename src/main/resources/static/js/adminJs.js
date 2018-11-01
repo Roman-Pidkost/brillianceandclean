@@ -3,7 +3,7 @@
 
 //buildAdminTable(reviews)
 loadAdminPage();
-var host = 'http://95.46.44.169:8080/';
+var host = 'http://localhost:8080/';
 function buildAdminTable(rev) {
     $(".backgroundAdm").hide()
 var L = rev.length
